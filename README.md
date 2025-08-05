@@ -1,6 +1,69 @@
 # Huffman Encoding Implementation
 
-A C++ implementation of the Huffman coding algorithm for data compression and decompression. This project provides efficient lossless compression by building variable-length prefix codes based on the frequency of characters in the input data.
+A C++ implementation of the Huffman coding algorithm for data compression and decompression, featuring both command-line tools and a modern web interface. This project provides efficient lossless compression by building variable-length prefix codes based on the frequency of characters in the input data.
+
+## 🌐 Web Interface
+
+The project includes a beautiful, responsive web interface built with **React** and **TypeScript** that allows users to:
+- **Drag & Drop** files for compression and decompression
+- **Real-time Progress** tracking during processing
+- **Compression Statistics** with detailed results
+- **File Preview** - See processed files directly on the website
+- **Download** compressed and decompressed files
+- **Smart UI** - Buttons adapt based on file type
+- **Educational Information** about Huffman encoding
+- **Type Safety** with TypeScript
+- **Modern React Hooks** for state management
+
+### Running the React Web Interface
+
+```bash
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+
+# Build for production
+npm run build
+```
+
+Then open your browser to `http://localhost:3000`
+
+### Features:
+
+#### **Compression Workflow:**
+1. **Upload** any file (text, images, documents, etc.)
+2. **Compress** - Watch real-time progress
+3. **Preview** - See compression statistics and file info
+4. **Download** - Get your compressed `.huf` file
+
+#### **Decompression Workflow:**
+1. **Upload** a compressed `.huf` file
+2. **Decompress** - Watch real-time progress
+3. **Preview** - See restoration statistics and file info
+4. **Download** - Get your original file back
+
+#### **Smart UI Features:**
+- **Adaptive Buttons** - Compress/Decompress buttons change based on file type
+- **File Type Icons** - Visual indicators for different file types
+- **Progress Tracking** - Real-time step-by-step progress
+- **Statistics Display** - Compression ratios and space saved
+- **File Information** - Size, name, and type details
+
+### Alternative: Simple HTML Version
+
+For a simpler version without React, you can also run:
+
+```bash
+# Start the simple web server
+python3 server.py
+
+# Or use any HTTP server
+python3 -m http.server 8000
+```
+
+Then open your browser to `http://localhost:8000`
 
 ## Features
 
@@ -22,6 +85,29 @@ Huffman_Encoding/
 ├── Helper.cpp           # I/O utilities implementation
 ├── Helper.hpp           # I/O utilities header
 ├── Makefile             # Build configuration
+├── package.json         # React dependencies
+├── tsconfig.json        # TypeScript configuration
+├── public/              # React public assets
+│   └── index.html       # React app HTML template
+├── src/                 # React TypeScript source
+│   ├── App.tsx          # Main React component
+│   ├── index.tsx        # React entry point
+│   ├── App.css          # Main app styling
+│   ├── index.css        # Global styles
+│   └── components/      # React components
+│       ├── Header.tsx
+│       ├── UploadSection.tsx
+│       ├── FileInfo.tsx
+│       ├── ActionButtons.tsx
+│       ├── ProgressSection.tsx
+│       ├── Results.tsx
+│       ├── InfoSection.tsx
+│       ├── Footer.tsx
+│       └── *.css        # Component styles
+├── index.html           # Simple HTML version
+├── styles.css           # Simple HTML styling
+├── script.js            # Simple HTML functionality
+├── server.py            # Simple HTML server
 ├── example_files/       # Test files
 │   ├── alphaext.txt     # Text file with mixed characters
 │   ├── binary           # Binary file
@@ -158,21 +244,6 @@ The implementation includes comprehensive error handling:
 - **Memory usage**: Frequency table requires 256 integers (1KB) regardless of input
 - **Single-pass**: Requires reading entire file twice (once for frequencies, once for encoding)
 
-## Future Enhancements
-
-Potential improvements for future versions:
-- **Adaptive Huffman coding**: Update tree during compression
-- **Block-based compression**: Process files in chunks
-- **Parallel processing**: Multi-threaded compression for large files
-- **Dictionary compression**: Combine with LZ77/LZ78 algorithms
-
-## License
-
-This project is provided as educational software for learning Huffman coding algorithms.
-
-## Contributing
-
-Feel free to submit issues, feature requests, or pull requests to improve the implementation.
 
 ---
 

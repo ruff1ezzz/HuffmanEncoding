@@ -1,0 +1,45 @@
+.file-info {
+  margin-bottom: 30px;
+}
+
+.file-details {
+  display: flex;
+  align-items: center;
+  background: #f8f9ff;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #e8ecff;
+}
+
+.file-details i {
+  font-size: 2rem;
+  color: #667eea;
+  margin-right: 20px;
+}
+
+.file-text h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.file-text p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.remove-btn {
+  background: #ff4757;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: auto;
+  transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: #ff3742;
+  transform: scale(1.1);
+} 
