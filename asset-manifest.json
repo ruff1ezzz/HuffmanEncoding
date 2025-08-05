@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/HuffmanEncoding/static/css/main.ad69f37d.css",
+    "main.js": "/HuffmanEncoding/static/js/main.709a35bb.js",
+    "index.html": "/HuffmanEncoding/index.html",
+    "main.ad69f37d.css.map": "/HuffmanEncoding/static/css/main.ad69f37d.css.map",
+    "main.709a35bb.js.map": "/HuffmanEncoding/static/js/main.709a35bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad69f37d.css",
+    "static/js/main.709a35bb.js"
+  ]
+}
