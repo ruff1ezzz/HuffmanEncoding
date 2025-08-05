@@ -2,7 +2,7 @@
 
 A C++ implementation of the Huffman coding algorithm for data compression and decompression, featuring both command-line tools and a modern web interface. This project provides efficient lossless compression by building variable-length prefix codes based on the frequency of characters in the input data.
 
-## 🌐 Web Interface
+## Web Interface
 
 The project includes a beautiful, responsive web interface built with **React** and **TypeScript** that allows users to:
 - **Drag & Drop** files for compression and decompression
@@ -73,48 +73,6 @@ Then open your browser to `http://localhost:8000`
 - **Empty File Handling**: Gracefully handles empty input files
 - **Memory Efficient**: Uses bit-level I/O for optimal compression
 - **Cross-Platform**: Written in standard C++11
-
-## Project Structure
-
-```
-Huffman_Encoding/
-├── compress.cpp          # Main compression program
-├── uncompress.cpp        # Main decompression program
-├── HCTree.cpp           # Huffman tree implementation
-├── HCTree.hpp           # Huffman tree header
-├── Helper.cpp           # I/O utilities implementation
-├── Helper.hpp           # I/O utilities header
-├── Makefile             # Build configuration
-├── package.json         # React dependencies
-├── tsconfig.json        # TypeScript configuration
-├── public/              # React public assets
-│   └── index.html       # React app HTML template
-├── src/                 # React TypeScript source
-│   ├── App.tsx          # Main React component
-│   ├── index.tsx        # React entry point
-│   ├── App.css          # Main app styling
-│   ├── index.css        # Global styles
-│   └── components/      # React components
-│       ├── Header.tsx
-│       ├── UploadSection.tsx
-│       ├── FileInfo.tsx
-│       ├── ActionButtons.tsx
-│       ├── ProgressSection.tsx
-│       ├── Results.tsx
-│       ├── InfoSection.tsx
-│       ├── Footer.tsx
-│       └── *.css        # Component styles
-├── index.html           # Simple HTML version
-├── styles.css           # Simple HTML styling
-├── script.js            # Simple HTML functionality
-├── server.py            # Simple HTML server
-├── example_files/       # Test files
-│   ├── alphaext.txt     # Text file with mixed characters
-│   ├── binary           # Binary file
-│   ├── dna.txt          # DNA sequence file
-│   └── empty.txt        # Empty file
-└── README.md           # This documentation
-```
 
 ## Building the Project
 
