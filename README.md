@@ -200,13 +200,6 @@ The implementation has been tested with various file types:
 | dna.txt | 10,000 bytes | 2,525 bytes | 25.3% |
 | empty.txt | 0 bytes | 0 bytes | N/A |
 
-### Verification
-All test files were successfully compressed and decompressed with perfect fidelity:
-- ✅ Text files with mixed characters
-- ✅ DNA sequence files (highly repetitive)
-- ✅ Empty files
-- ✅ Binary files
-
 ## Key Components
 
 ### HCTree Class
