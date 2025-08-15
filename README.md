@@ -2,6 +2,8 @@
 
 A C++ implementation of the Huffman coding algorithm for data compression and decompression, featuring both command-line tools and a modern web interface. This project provides efficient lossless compression by building variable-length prefix codes based on the frequency of characters in the input data.
 
+Demo: https://ruff1ezzz.github.io/HuffmanEncoding/
+
 ## Web Interface
 
 The project includes a beautiful, responsive web interface built with **React** and **TypeScript** that allows users to:
@@ -14,21 +16,6 @@ The project includes a beautiful, responsive web interface built with **React** 
 - **Educational Information** about Huffman encoding
 - **Type Safety** with TypeScript
 - **Modern React Hooks** for state management
-
-### Running the React Web Interface
-
-```bash
-# Install dependencies
-npm install
-
-# Start the development server
-npm start
-
-# Build for production
-npm run build
-```
-
-Then open your browser to `http://localhost:3000`
 
 ### Features:
 
@@ -51,20 +38,6 @@ Then open your browser to `http://localhost:3000`
 - **Statistics Display** - Compression ratios and space saved
 - **File Information** - Size, name, and type details
 
-### Alternative: Simple HTML Version
-
-For a simpler version without React, you can also run:
-
-```bash
-# Start the simple web server
-python3 server.py
-
-# Or use any HTTP server
-python3 -m http.server 8000
-```
-
-Then open your browser to `http://localhost:8000`
-
 ## Features
 
 - **Lossless Compression**: Preserves all original data during compression and decompression
@@ -74,7 +47,7 @@ Then open your browser to `http://localhost:8000`
 - **Memory Efficient**: Uses bit-level I/O for optimal compression
 - **Cross-Platform**: Written in standard C++11
 
-## Building the Project
+## Building the Compress/Decompress Function
 
 ### Prerequisites
 - C++11 compatible compiler (g++ recommended)
@@ -93,7 +66,7 @@ make compress
 make uncompress
 ```
 
-## Usage
+## Function usage (testing)
 
 ### Compression
 ```bash
@@ -198,4 +171,4 @@ The implementation includes comprehensive error handling:
 
 ---
 
-*This implementation demonstrates fundamental concepts in data compression and provides a solid foundation for understanding lossless compression algorithms.* 
+**Built using React.js and Firebase**
