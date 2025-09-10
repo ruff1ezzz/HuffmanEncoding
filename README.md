@@ -171,4 +171,4 @@ The implementation includes comprehensive error handling:
 
 ---
 
-**Built using React.js and Firebase**
+**Built using React.js, TypeScript, and C++
